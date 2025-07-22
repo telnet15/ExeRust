@@ -21,7 +21,7 @@ fn main()
                  break;
              }
          print!("Your guess:{}",guess); 
-         let _= io::stdout().flush();
+         let _= io::stdout().flush(); // correct the lines for the user's input
          io::stdin().read_line(&mut guess).expect("Failed to read line");
                   
             let guess: u32 = match guess.trim().parse(){
